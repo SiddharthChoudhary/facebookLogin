@@ -19,8 +19,8 @@ class CreateProfilesTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('username');
             $table->biginteger('uid')->unsigned();
-            $table->string('access_token');
-            $table->string('access_token_secret');
+            $table->string('access_token')->nullable();
+            $table->string('access_token_secret')->nullable();
             $table->timestamps();
         });
     }
