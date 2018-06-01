@@ -6,12 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('plugins/datepicker/datepicker3.css')}}">
-    <link rel="stylesheet" href="{{asset('plugins/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="{{ asset('plugins/datepicker/bootstrap-datepicker.js') }}" type="text/javascript"></script>
-    <script src="{{asset('plugins/bootstrap-select/dist/js/bootstrap-select.js')}}"></script>
 </head>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
@@ -22,13 +18,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/show">Blogging HAPPILY</a>
+            <a class="navbar-brand" href="#">Blogging HAPPILY</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="\add">ADD YOUR BLOG</a></li>
-                           </ul>
+                <li><a href="#">ADD YOUR BLOG</a></li>
+            </ul>
         </div>
     </div>
 </nav>

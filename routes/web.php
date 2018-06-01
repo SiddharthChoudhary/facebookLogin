@@ -21,6 +21,4 @@ Route::get('login/fb/callback',['as'=>'loginCallback','uses'=>'LoginController@l
 Route::get('/',['as'=>'login','uses'=>'LoginController@login']);
 Route::get('login/fb',['as'=>'loginFB','uses'=>'LoginController@loginFB']);
 Route::get('logout',['as'=>'logout','uses'=>'LoginController@logout']);
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
