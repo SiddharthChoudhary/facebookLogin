@@ -13,7 +13,7 @@
         </div>
         <div>
             <div class="thumbnail">
-                <img src="https://dev.scubaya.eu/assets/images/scubaya/dive_center/3/1-divers-668777.jpg" class="img-thumbnail" alt="Image" style="width:50%">
+                <img src="{{asset('/images/'.Auth::user()->facebook_id.'_profile_1.jpg')}}"  alt="Image" >
             </div>
             <div class="form-group">
                 <div class="col-md-8">
@@ -39,13 +39,13 @@
         FB.init({appId: "1983932818538216", status: true, cookie: true});
 
         function postToFeed() {
-
             // calling the API ...
             var obj = {
                 method: 'feed',
+                access_token:'{{\App\Profile::pluck('access_token')->first()}}',
                 redirect_uri: 'http://localhost:8000/login',
-                link: 'https://dev.scubaya.eu/assets/images/scubaya/dive_center/3/1-divers-668777.jpg',
-                picture: 'https://dev.scubaya.eu/assets/images/scubaya/dive_center/3/1-divers-668777.jpg',
+                link:'{{asset('/images/'.\Illuminate\Support\Facades\Auth::user()->facebook_id.'_profile_1.jpg')}}',
+                picture: '{{asset('/images/'.\Illuminate\Support\Facades\Auth::user()->facebook_id.'_profile_1.jpg')}}',
                 name: 'ISITCA Assignment',
                 caption: 'Sharing the following image',
                 description: 'Share the amazing images through Facebook login.'
